@@ -15,8 +15,10 @@ public class Porte {
 		this.numeroDePorte = a;
 	}
 
-	public boolean equals(Object a) {
-		return false;
+	public boolean equals(Porte a) {
+		if (this.numeroDePorte == a.numeroDePorte)
+		return true;
+		else return false;
 	}
 
 	public int hashCode() {

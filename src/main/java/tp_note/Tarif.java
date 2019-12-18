@@ -41,11 +41,11 @@ public class Tarif {
 		this.prix = prix;
 	}
 
-	public Tarif(Porte en, Porte so, BigDecimal pr, LocalDateTime date) {
+	public Tarif(Porte en, Porte so, BigDecimal pr) {
 		this.entree = en;
 		this.sortie = so;
 		this.prix = pr;
-		this.dateValidite = date;
+		
 	}
 
 	public String toString() {
