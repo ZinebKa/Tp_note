@@ -19,7 +19,14 @@ public class CompagnieAutoroute {
 	}
 
 	private Tarif getTarifCalculé(Porte en, Porte so) {
-		
+		BigDecimal sum = new BigDecimal(0);
+		for (int i=0 ; i < tarifs.size(); i++)
+		{
+			if (tarifs.get(i).getEntree().getNumeroDePorte() >= en.getNumeroDePorte() && tarifs.get(i).getSortie().getNumeroDePorte() >= so.getNumeroDePorte()) {
+				sum.add( tarifs.get(i).getPrix());
+			} 
+			
+		}
 		return null;
 	}
 
